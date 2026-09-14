@@ -1,0 +1,78 @@
+{
+  "mode": "cv",
+  "model_name": "tf_efficientnetv2_s.in21k_ft_in1k",
+  "use_srm": false,
+  "train_size": 640,
+  "eval_size": 640,
+  "epochs": 3,
+  "effective_batch": 32,
+  "lr": 0.0002,
+  "tta": false,
+  "seed": 42,
+  "n_models": 5,
+  "threshold": 0.2552508332479306,
+  "oof": {
+    "auc": 0.9999933702485581,
+    "threshold": 0.2552508332479306,
+    "f1": 0.999321343739396,
+    "f1_best_possible": 0.999321343739396,
+    "f1_at_0.5": 0.9987256817602582,
+    "balanced_acc": 0.9986417657045841,
+    "pred_positive_rate": 0.667572156196944
+  },
+  "per_model": [
+    {
+      "tag": "fold0",
+      "auc": 0.9999942349987461,
+      "threshold": 0.2780607077776501,
+      "f1": 0.9991518235793045,
+      "f1_best_possible": 0.9991518235793045,
+      "f1_at_0.5": 0.9991503823279524,
+      "balanced_acc": 0.99830220713073,
+      "pred_positive_rate": 0.6677985285795133
+    },
+    {
+      "tag": "fold1",
+      "auc": 0.9999942349987461,
+      "threshold": 0.27002281599273825,
+      "f1": 0.9991518235793045,
+      "f1_best_possible": 0.9991518235793045,
+      "f1_at_0.5": 0.9987261146496815,
+      "balanced_acc": 0.99830220713073,
+      "pred_positive_rate": 0.6677985285795133
+    },
+    {
+      "tag": "fold2",
+      "auc": 0.9999942349987462,
+      "threshold": 0.24958439237221028,
+      "f1": 0.9995757318625371,
+      "f1_best_possible": 0.9995757318625371,
+      "f1_at_0.5": 0.9982993197278912,
+      "balanced_acc": 0.9991511035653651,
+      "pred_positive_rate": 0.66723259762309
+    },
+    {
+      "tag": "fold3",
+      "auc": 0.9999812637459249,
+      "threshold": 0.2552508332479306,
+      "f1": 0.9987282746926663,
+      "f1_best_possible": 0.9987282746926665,
+      "f1_at_0.5": 0.9978768577494692,
+      "balanced_acc": 0.997453310696095,
+      "pred_positive_rate": 0.6683644595359366
+    },
+    {
+      "tag": "fold4",
+      "auc": 1.0,
+      "threshold": 0.15168634768563186,
+      "f1": 1.0,
+      "f1_best_possible": 1.0,
+      "f1_at_0.5": 0.9995753715498938,
+      "balanced_acc": 1.0,
+      "pred_positive_rate": 0.6666666666666666
+    }
+  ],
+  "all_ones_f1": 0.8,
+  "improvement_over_baseline": 0.19932134373939592,
+  "test_positive_rate": 0.6656596173212488
+}

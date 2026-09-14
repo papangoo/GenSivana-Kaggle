@@ -1,0 +1,76 @@
+{
+  "mode": "cv",
+  "model_name": "tf_efficientnetv2_l.in21k_ft_in1k",
+  "use_srm": true,
+  "srm_gain": 10.0,
+  "train_size": 640,
+  "eval_size": 640,
+  "epochs": 16,
+  "effective_batch": 32,
+  "lr": 0.0003,
+  "bce_weight": 0.5,
+  "dice_weight": 0.5,
+  "lovasz_weight": 0.0,
+  "neg_ratio": 0.0,
+  "tta": true,
+  "seed": 42,
+  "n_models": 5,
+  "n_oof": 2942,
+  "oof_mean_iou": 0.8416516205650627,
+  "oof_mean_iou_by_threshold": {
+    "0.3": 0.8190822443956588,
+    "0.4": 0.8325713352181721,
+    "0.5": 0.8395144654742183,
+    "0.6": 0.8416516205650627,
+    "0.7": 0.84005665383808
+  },
+  "oof_mean_iou_by_morph": {
+    "minarea0.0_close0": 0.8416516205650627,
+    "minarea0.0_close5": 0.8413149355810998,
+    "minarea0.01_close0": 0.8415798756511478,
+    "minarea0.01_close5": 0.8412411847038659,
+    "minarea0.03_close0": 0.8411449621834965,
+    "minarea0.03_close5": 0.8408084133836551
+  },
+  "chosen_threshold": 0.6,
+  "chosen_min_area_frac": 0.0,
+  "chosen_close_px": 0,
+  "projected_score": 0.8416516205650627,
+  "all_blank_floor": 0.0,
+  "per_model": [
+    {
+      "tag": "fold0",
+      "best_epoch": 13,
+      "mean_iou_at_0.5": 0.8431967148682921
+    },
+    {
+      "tag": "fold1",
+      "best_epoch": 12,
+      "mean_iou_at_0.5": 0.8380036599787548
+    },
+    {
+      "tag": "fold2",
+      "best_epoch": 14,
+      "mean_iou_at_0.5": 0.8306725784162128
+    },
+    {
+      "tag": "fold3",
+      "best_epoch": 15,
+      "mean_iou_at_0.5": 0.8396982796814997
+    },
+    {
+      "tag": "fold4",
+      "best_epoch": 13,
+      "mean_iou_at_0.5": 0.8459974014945313
+    }
+  ],
+  "oof_iou_percentiles": {
+    "p5": 0.5571838073620158,
+    "p25": 0.8193231005535448,
+    "p50": 0.8908850158753915,
+    "p75": 0.9319633106551193,
+    "p95": 0.9630735716121681
+  },
+  "n_gated_edits": 331,
+  "n_polygons_written": 331
+}

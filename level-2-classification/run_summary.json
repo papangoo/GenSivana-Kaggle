@@ -1,0 +1,127 @@
+{
+  "mode": "cv",
+  "model_name": "tf_efficientnetv2_s.in21k_ft_in1k",
+  "n_classes": 3,
+  "use_srm": true,
+  "train_size": 640,
+  "eval_size": 640,
+  "epochs": 3,
+  "effective_batch": 32,
+  "lr": 0.0002,
+  "label_smoothing": 0.0,
+  "tta": false,
+  "seed": 42,
+  "n_models": 5,
+  "oof": {
+    "macro_f1": 0.9987547590666154,
+    "balanced_acc": 0.9987549518958687,
+    "accuracy": 0.9987549518958687,
+    "errors": 11,
+    "n": 8835,
+    "f1_real": 0.998642687478792,
+    "f1_generated": 0.9994907485995587,
+    "f1_local_edit": 0.9981308411214953,
+    "macro_auc": 0.9999749414612165
+  },
+  "oof_with_fitted_offsets": {
+    "macro_f1": 0.9987547590666154,
+    "balanced_acc": 0.9987549518958687,
+    "accuracy": 0.9987549518958687,
+    "errors": 11,
+    "n": 8835,
+    "f1_real": 0.998642687478792,
+    "f1_generated": 0.9994907485995587,
+    "f1_local_edit": 0.9981308411214953,
+    "macro_auc": 0.9999749414612165
+  },
+  "class_offsets": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "per_model": [
+    {
+      "tag": "fold0",
+      "macro_f1": 0.998301725897964,
+      "balanced_acc": 0.9983022071307301,
+      "accuracy": 0.99830220713073,
+      "errors": 3,
+      "n": 1767,
+      "f1_real": 0.99830220713073,
+      "f1_generated": 0.9991518235793045,
+      "f1_local_edit": 0.9974511469838573,
+      "macro_auc": 0.9999745379111286
+    },
+    {
+      "tag": "fold1",
+      "macro_f1": 0.9994340686357525,
+      "balanced_acc": 0.9994340690435767,
+      "accuracy": 0.9994340690435767,
+      "errors": 1,
+      "n": 1767,
+      "f1_real": 0.9991518235793045,
+      "f1_generated": 1.0,
+      "f1_local_edit": 0.9991503823279524,
+      "macro_auc": 0.999996637082602
+    },
+    {
+      "tag": "fold2",
+      "macro_f1": 0.9988676556288335,
+      "balanced_acc": 0.9988681380871535,
+      "accuracy": 0.9988681380871534,
+      "errors": 2,
+      "n": 1767,
+      "f1_real": 0.9991518235793045,
+      "f1_generated": 0.9991518235793045,
+      "f1_local_edit": 0.9982993197278912,
+      "macro_auc": 0.9999951958322884
+    },
+    {
+      "tag": "fold3",
+      "macro_f1": 0.9988681380871535,
+      "balanced_acc": 0.9988681380871535,
+      "accuracy": 0.9988681380871534,
+      "errors": 2,
+      "n": 1767,
+      "f1_real": 0.99830220713073,
+      "f1_generated": 1.0,
+      "f1_local_edit": 0.99830220713073,
+      "macro_auc": 0.9999975979161442
+    },
+    {
+      "tag": "fold4",
+      "macro_f1": 0.9983022046858575,
+      "balanced_acc": 0.9983022071307301,
+      "accuracy": 0.99830220713073,
+      "errors": 3,
+      "n": 1767,
+      "f1_real": 0.9983050847457627,
+      "f1_generated": 0.9991503823279524,
+      "f1_local_edit": 0.9974511469838573,
+      "macro_auc": 0.9999644491589343
+    }
+  ],
+  "best_constant_baseline": 0.16666666666666666,
+  "confusion": [
+    [
+      2943,
+      0,
+      2
+    ],
+    [
+      0,
+      2944,
+      1
+    ],
+    [
+      6,
+      2,
+      2937
+    ]
+  ],
+  "test_distribution": {
+    "real": 332,
+    "generated": 330,
+    "local_edit": 331
+  }
+}
