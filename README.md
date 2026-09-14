@@ -1,6 +1,6 @@
 # GenSivana Real or Fake: results and code
 
-Kaggle account: papangoo.
+Kaggle account: papangoo. (Andriamiadana Mika Fifaliana)
 
 | Competition | Rank | Final score | Metric |
 |---|---|---|---|
